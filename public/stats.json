@@ -1,0 +1,66 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-3ba36e997613fcf5ce00.js",
+      "component---src-pages-index-js-3ba36e997613fcf5ce00.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---budget-related": [
+      "path---budget-related-ab9dfb3a5a4410c69765.js",
+      "path---budget-related-ab9dfb3a5a4410c69765.js.map"
+    ],
+    "component---src-templates-blog-post-js": [
+      "component---src-templates-blog-post-js-0ccdfc39083db91f7933.js",
+      "component---src-templates-blog-post-js-0ccdfc39083db91f7933.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-ea7fe63d2e73a825df41.js",
+      "component---src-layouts-index-js-ea7fe63d2e73a825df41.js.map"
+    ],
+    "path---what-is-the-expected-outcome-and-performance": [
+      "path---what-is-the-expected-outcome-and-performance-103afc54257e3f1a57c0.js",
+      "path---what-is-the-expected-outcome-and-performance-103afc54257e3f1a57c0.js.map"
+    ],
+    "path---page-2": [
+      "path---page-2-a0e39f21c11f6a62c5ab.js",
+      "path---page-2-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---index": [
+      "path---index-97a8576c3e80c3a90caf.js",
+      "path---index-97a8576c3e80c3a90caf.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-cfe08c15100186618874.js",
+      "commons-cfe08c15100186618874.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---how-to-start-digital-marketing-2": [
+      "path---how-to-start-digital-marketing-2-884cf102da5d2ad78940.js",
+      "path---how-to-start-digital-marketing-2-884cf102da5d2ad78940.js.map"
+    ],
+    "component---src-pages-page-2-js": [
+      "component---src-pages-page-2-js-814c3250cda4a015aef7.js",
+      "component---src-pages-page-2-js-814c3250cda4a015aef7.js.map"
+    ],
+    "app": [
+      "app-15b7c56997755505936f.js",
+      "build-js-styles.css",
+      "app-15b7c56997755505936f.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+webpackJsonp([91112023931553],{297:function(t,e){t.exports={data:{contentfulBlog:{title:"Budget related",slug:"budget-related",content:{childMarkdownRemark:{html:"<p>賣廣告要幾多錢<br>\n賣廣告要幾多budget\n網上宣傳怎計算\n網上宣傳怎收費\nGoogle AdWords點收錢\nGoogle Ads點收錢</p>"}}}},pathContext:{slug:"budget-related"}}}});
+//# sourceMappingURL=path---budget-related-ab9dfb3a5a4410c69765.js.map

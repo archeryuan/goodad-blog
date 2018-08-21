@@ -3,16 +3,25 @@ import PropTypes from 'prop-types';
 
 class BlogPost extends Component {
   render() {
-    const {
-      title,
-      body
-    } = this.props.data.contentfulBlogPost
-    return (
-      <div>
-        <h1>{title}</h1>
-        <div dangerouslySetInnerHTML={{__html: body.childMarkdownRemark.html}} />
-      </div>
-    )
+    if(!this.props.data.contentfulBlogPost){
+      return (
+        <div>
+          "No content!"
+        </div>
+      )
+    }else{
+      const {
+        title,
+        body
+      } = this.props.data.contentfulBlogPost
+      return (
+        <div>
+          <h1>{title}</h1>
+          <div dangerouslySetInnerHTML={{__html: body.childMarkdownRemark.html}} />
+        </div>
+      )
+    }
+
   }
 }
 

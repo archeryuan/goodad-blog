@@ -61,9 +61,14 @@ const BlogPost = ({node}) => {
 function IndexPage(props) {
   const { classes } = props;
   const { data } = props;
+  let wWidth = 960;
+
+  if(typeof window !== 'undefined' && window.innerWidth){
+    wWidth = window.innerWidth;
+  }
   return (
     <div className={classes.root}>
-      <GridList cellHeight={160} className={classes.gridList} cols={window.innerWidth < 900 ? 1 : 2}>
+      <GridList cellHeight={160} className={classes.gridList} cols={wWidth < 900 ? 1 : 2}>
         {data.allContentfulBlogPost.edges.map((edge) => {if(edge.node.publishDate){return (
           <GridListTile key={edge.node.id} cols={edge.node.cols || 1} rows={3} style={{
             paddingLeft: 20,

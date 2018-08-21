@@ -60,11 +60,13 @@ function PreviewPage(props) {
             paddingRight: 20
           }}>
             <Card className={classes.card}>
-              <CardMedia
-                className={classes.media}
-                image={edge.node.heroImage.responsiveResolution ? edge.node.heroImage.responsiveResolution.src : noImage}
-                title={edge.node.title}
-              />
+              <Link to={edge.node.slug}>
+                <CardMedia
+                  className={classes.media}
+                  image={edge.node.heroImage.responsiveResolution ? edge.node.heroImage.responsiveResolution.src : noImage}
+                  title={edge.node.title}
+                />
+              </Link>
               <CardContent>
                 <Typography gutterBottom variant="headline" component="h2" style={{
                   fontFamily: 'Montserrat, sans-serif',

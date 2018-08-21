@@ -4,12 +4,19 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import logo from "../assets/images/GoodAd-Blog-Logo.png";
 import lightLogo from "../assets/images/Logo-Light.png"
+import previewLogo from "../assets/images/preview.png"
 
 import '../assets/css/normalize.css'
 import '../assets/css/webflow.css'
 import '../assets/css/goodad.webflow.css'
 
-const Header = () => (
+const Header = (props) => {
+  console.log('prrrrr====', props);
+  let showLogo = logo
+  if(props.rn === '/preview'){
+    showLogo = previewLogo;
+  }
+  return (
   <div className="sec-a-top-bar">
           <div data-collapse="medium" data-animation="over-right" data-duration={400} className="top-nav-bar-blog w-nav">
             <div className="con-nav-bar-blog w-container">
@@ -22,7 +29,7 @@ const Header = () => (
                 <a href="https://app.goodad.co" className="nav-link-mobile-signup w-hidden-main w-nav-link">LOGIN</a>
               </nav>
               <a href="index.html" id="Nav-Logo" className="link-top-logo w-nav-brand">
-                <img src={logo} width={60} className="blog-logo" />
+                 <img src={showLogo} width={60} className="blog-logo" />
               </a>
               <a id="Signup-from-FP" className="nav-tab-subscrible w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link">Subscribe</a>
               <div className="menu-button-blog w-nav-button">
@@ -31,7 +38,7 @@ const Header = () => (
             </div>
           </div>
         </div>
-)
+)}
 
 const BlogHeader = () => (
       <div className="blog-sec-a">
@@ -101,25 +108,29 @@ const Footer = () => (
       </div>
 );
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet
-      title="GoodAd Blog"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Header />
-    <BlogHeader />
-    <div id="Features" className="sec-b-blog">
-      <div className="con-blog-list w-container">
-        {children()}
+const TemplateWrapper = (props) => {
+  console.log('child=======',props.location.pathname)
+  const { children } = props;
+  return (
+    <div>
+      <Helmet
+        title="GoodAd Blog"
+        meta={[
+          { name: 'description', content: 'Sample' },
+          { name: 'keywords', content: 'sample, something' },
+        ]}
+      />
+      <Header rn={props.location.pathname} />
+      <BlogHeader />
+      <div id="Features" className="sec-b-blog">
+        <div className="con-blog-list w-container">
+          {children()}
+        </div>
       </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>
-)
+  )
+}
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,

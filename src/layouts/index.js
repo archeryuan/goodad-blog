@@ -13,7 +13,7 @@ import '../assets/css/goodad.webflow.css'
 const Header = (props) => {
   console.log('prrrrr====', props);
   let showLogo = logo
-  if(props.rn === '/preview'){
+  if(props.rn === '/preview' || props.rn === '/preview/'){
     showLogo = previewLogo;
   }
   return (

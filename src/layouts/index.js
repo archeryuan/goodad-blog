@@ -13,7 +13,7 @@ import '../assets/css/goodad.webflow.css'
 const Header = (props) => {
   console.log('prrrrr====', props);
   let showLogo = logo
-  if(props.rn === '/preview' || props.rn === '/preview/'){
+  if(props.rn === '/preview' || props.rn === '/preview/' || props.rh==='#preview'){
     showLogo = previewLogo;
   }
   return (
@@ -46,23 +46,23 @@ const BlogHeader = () => (
           <div className="mask w-slider-mask">
             <div className="slide-1 w-slide">
               <div className="con-top w-container">
-                <h1 className="heading-white-top">HOW TO START DIGITAL MARKETING</h1><a id="Sec-A1-Create" href="/how-to-start-digital-marketing" className="nav-tab-subscrible middle w-button">READ</a></div>
+                <h1 className="heading-white-top">HOW TO START DIGITAL MARKETING</h1><a id="Sec-A1-Create" href="/如何開始網上宣傳" className="nav-tab-subscrible middle w-button">READ</a></div>
             </div>
             <div className="slide-2 w-slide">
               <div className="con-top w-container">
-                <h1 className="heading-white-top">5 TIPS TO WORKING WITH MARKETING AGENCY</h1><a id="Sec-A1-Create" href="/how-to-start-digital-marketing" className="nav-tab-subscrible middle w-button">READ</a></div>
+                <h1 className="heading-white-top">5 TIPS TO WORKING WITH MARKETING AGENCY</h1><a id="Sec-A1-Create" href="/如何開始網上宣傳" className="nav-tab-subscrible middle w-button">READ</a></div>
             </div>
             <div className="slide-3 w-slide">
               <div className="con-top w-container">
-                <h1 className="heading-white-top">DIFFERENCES BETWEEN<br />SEO AND SEM</h1><a id="Sec-A1-Create" href="/how-to-start-digital-marketing" className="nav-tab-subscrible middle w-button">READ</a></div>
+                <h1 className="heading-white-top">DIFFERENCES BETWEEN<br />SEO AND SEM</h1><a id="Sec-A1-Create" href="/如何開始網上宣傳" className="nav-tab-subscrible middle w-button">READ</a></div>
             </div>
             <div className="slide-4 w-slide">
               <div className="con-top w-container">
-                <h1 className="heading-white-top">DO YOU NEED A DIGITAL MARKETER?</h1><a id="Sec-A1-Create" href="/how-to-start-digital-marketing" className="nav-tab-subscrible middle w-button">READ</a></div>
+                <h1 className="heading-white-top">DO YOU NEED A DIGITAL MARKETER?</h1><a id="Sec-A1-Create" href="/如何開始網上宣傳" className="nav-tab-subscrible middle w-button">READ</a></div>
             </div>
             <div className="slide-5 w-slide">
               <div className="con-top w-container">
-                <h1 className="heading-white-top">PATH TO CREATING YOUR FIRST MARKETING CAMPAIGN</h1><a id="/how-to-start-digital-marketing" href="#Pricing" className="nav-tab-subscrible middle w-button">READ</a></div>
+                <h1 className="heading-white-top">PATH TO CREATING YOUR FIRST MARKETING CAMPAIGN</h1><a id="/如何開始網上宣傳" href="#Pricing" className="nav-tab-subscrible middle w-button">READ</a></div>
             </div>
           </div>
           <div className="left-arrow w-slider-arrow-left">
@@ -109,7 +109,7 @@ const Footer = () => (
 );
 
 const TemplateWrapper = (props) => {
-  console.log('child=======',props.location.pathname)
+  console.log('child=======',props.location)
   const { children } = props;
   return (
     <div>
@@ -120,7 +120,7 @@ const TemplateWrapper = (props) => {
           { name: 'keywords', content: 'sample, something' },
         ]}
       />
-      <Header rn={props.location.pathname} />
+      <Header rn={props.location.pathname} rh={props.location.hash} />
       <BlogHeader />
       <div id="Features" className="sec-b-blog">
         <div className="con-blog-list w-container">

@@ -5,12 +5,12 @@
       "path---automate-with-webhooks-4a086a80c9a653ae453e.js.map"
     ],
     "path---preview": [
-      "path---preview-52c56c4aab1543a35375.js",
-      "path---preview-52c56c4aab1543a35375.js.map"
+      "path---preview-a0e39f21c11f6a62c5ab.js",
+      "path---preview-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-a3ed40db7de7c3ab8111.js",
-      "component---src-pages-index-js-a3ed40db7de7c3ab8111.js.map"
+      "component---src-pages-index-js-c4940d0e97e685267eb7.js",
+      "component---src-pages-index-js-c4940d0e97e685267eb7.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -25,24 +25,24 @@
       "path---static-sites-are-great-453442a2a531d1f5c4dd.js.map"
     ],
     "component---src-pages-preview-js": [
-      "component---src-pages-preview-js-bfe4f7fbc1c5603d6a38.js",
-      "component---src-pages-preview-js-bfe4f7fbc1c5603d6a38.js.map"
+      "component---src-pages-preview-js-a2b5ce64da34ff8474c1.js",
+      "component---src-pages-preview-js-a2b5ce64da34ff8474c1.js.map"
     ],
     "component---src-templates-blog-post-js": [
       "component---src-templates-blog-post-js-6222bb0abf1c7f402e9a.js",
       "component---src-templates-blog-post-js-6222bb0abf1c7f402e9a.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-1ad9c2a62402a40f88de.js",
-      "component---src-layouts-index-js-1ad9c2a62402a40f88de.js.map"
+      "component---src-layouts-index-js-d5b2206c7e2b5bb5d11b.js",
+      "component---src-layouts-index-js-d5b2206c7e2b5bb5d11b.js.map"
     ],
     "path---page-2": [
       "path---page-2-a0e39f21c11f6a62c5ab.js",
       "path---page-2-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-52c56c4aab1543a35375.js",
-      "path---index-52c56c4aab1543a35375.js.map"
+      "path---index-89dec8e6b2425d17e3d6.js",
+      "path---index-89dec8e6b2425d17e3d6.js.map"
     ],
     "path---hello-world": [
       "path---hello-world-099f2ddb6d770cbee0be.js",
@@ -66,23 +66,27 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "path---how-to-start-digital-marketing": [
-      "path---how-to-start-digital-marketing-3ccde1008aee67017635.js",
-      "path---how-to-start-digital-marketing-3ccde1008aee67017635.js.map"
+    "path---healthy-lifestyle": [
+      "path---healthy-lifestyle-661bd5ca4bc05bc80f6a.js",
+      "path---healthy-lifestyle-661bd5ca4bc05bc80f6a.js.map"
     ],
     "component---src-pages-page-2-js": [
       "component---src-pages-page-2-js-075954cd9c4544c7dcd8.js",
       "component---src-pages-page-2-js-075954cd9c4544c7dcd8.js.map"
     ],
     "app": [
-      "app-8a8d20c4980ad09910ef.js",
+      "app-fca47c97be01014997fa.js",
       "build-js-styles.css",
-      "app-8a8d20c4980ad09910ef.js.map",
+      "app-fca47c97be01014997fa.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---如何開始網上宣傳": [
+      "path---如何開始網上宣傳-d155aaf2abd60fc65f9c.js",
+      "path---如何開始網上宣傳-d155aaf2abd60fc65f9c.js.map"
     ],
     "path---archer-test": [
       "path---archer-test-0260716122fcc663880d.js",

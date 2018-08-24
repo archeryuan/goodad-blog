@@ -60,7 +60,7 @@ function PreviewPage(props) {
             paddingRight: 20
           }}>
             <Card className={classes.card}>
-              <Link to={edge.node.slug}>
+              <Link to={edge.node.slug+'#preview'}>
                 <CardMedia
                   className={classes.media}
                   image={edge.node.heroImage.responsiveResolution ? edge.node.heroImage.responsiveResolution.src : noImage}
@@ -73,7 +73,7 @@ function PreviewPage(props) {
                   color: '#f44e7a',
                   textAlign: 'center',
                 }}>
-                  <Link to={edge.node.slug} style={{
+                  <Link to={edge.node.slug+'#preview'} style={{
                     fontFamily: 'Montserrat, sans-serif',
                     color: '#f44e7a',
                     textAlign: 'center',

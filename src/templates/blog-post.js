@@ -14,12 +14,21 @@ class BlogPost extends Component {
         title,
         body
       } = this.props.data.contentfulBlogPost
-      return (
-        <div>
-          <h1>{title}</h1>
-          <div dangerouslySetInnerHTML={{__html: body.childMarkdownRemark.html}} />
-        </div>
-      )
+      if(body){
+        return (
+          <div>
+            <h1>{title}</h1>
+            <div dangerouslySetInnerHTML={{__html: body.childMarkdownRemark.html}} />
+          </div>
+        )
+      }else{
+        return (
+          <div>
+            <h1>{title}</h1>
+          </div>
+        )
+      }
+
     }
 
   }

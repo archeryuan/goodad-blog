@@ -11,11 +11,7 @@ import '../assets/css/webflow.css'
 import '../assets/css/goodad.webflow.css'
 
 const Header = (props) => {
-  console.log('prrrrr====', props);
   let showLogo = logo
-  if(props.rn === '/preview' || props.rn === '/preview/' || props.rh==='#preview'){
-    showLogo = previewLogo;
-  }
   return (
   <div className="sec-a-top-bar">
           <div data-collapse="medium" data-animation="over-right" data-duration={400} className="top-nav-bar-blog w-nav">
@@ -109,7 +105,6 @@ const Footer = () => (
 );
 
 const TemplateWrapper = (props) => {
-  console.log('child=======',props.location)
   const { children } = props;
   return (
     <div>
@@ -120,7 +115,7 @@ const TemplateWrapper = (props) => {
           { name: 'keywords', content: 'sample, something' },
         ]}
       />
-      <Header rn={props.location.pathname} rh={props.location.hash} />
+      <Header />
       <BlogHeader />
       <div id="Features" className="sec-b-blog">
         <div className="con-blog-list w-container">

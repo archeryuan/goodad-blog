@@ -69,7 +69,7 @@ function IndexPage(props) {
   return (
     <div className={classes.root}>
       <GridList cellHeight={160} className={classes.gridList} cols={wWidth < 900 ? 1 : 2}>
-        {data.allContentfulBlogPost.edges.map((edge) => {if(edge.node.publishDate){return (
+        {data.allContentfulBlogPost.edges.map((edge) => {if(edge.node.heroImage){return (
           <GridListTile key={edge.node.id} cols={edge.node.cols || 1} rows={3} style={{
             paddingLeft: 20,
             paddingRight: 20

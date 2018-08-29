@@ -7,8 +7,7 @@ module.exports = {
       resolve: 'gatsby-source-contentful',
       options: {
         spaceId: `ldcsjhfffdjn`,
-        accessToken: `5fc70819c4778cff69492e3d9443e82823e530fe4f5f559e552942dc17fcd2d3`,
-        host: 'preview.contentful.com'
+        accessToken: `b13bee8f4c1ed42fb98c1244e68d2a257944d5c8dd53503d6dd3dedf4885bbc6`,
       }
     },
     `gatsby-transformer-remark`,

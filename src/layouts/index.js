@@ -108,13 +108,49 @@ const TemplateWrapper = (props) => {
   const { children } = props;
   return (
     <div>
-      <Helmet
-        title="GoodAd Blog"
-        meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
-        ]}
-      />
+      <Helmet>
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NGCXZCV');</script>
+      <!-- End Google Tag Manager -->
+    <!-- COMMON TAGS -->
+    <title>GoodBlog - Result Oriented Marketing Tips for SME</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="title" content="GoodBlog - Result Oriented Marketing Tips for SME">
+    <meta name="description" content="Result Oriented Marketing for Google Ads set in 3 min. Auto Ads/Keywords suggestion and optimization by AI. Advertise now!">
+    <meta name="keywords" content="Result Oriented Marketing, Google Ads,Get the Real ROI From Your Ads Money, Remarketing, SME,Startup,SEO,,Facebook Ads,Search Engine Marketing,GoodPage,GoodAd">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="3 days">
+    <meta name="author" content="Social Analytics (HK) Limited, Master Concept Group">
+
+    <!-- Search Engine -->
+    <link rel="canonical" href="https://www.goodad.co" rel="nofollow"/>
+    <meta name="description" content="Result Oriented Marketing for Google Ads set in 3 min. Auto Ads/Keywords suggestion and optimization by AI. Advertise now!">
+    <meta name="image" content="http://goodad.co/images/goodad_logo_sq.png">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="GoodBlog - Result Oriented Marketing Tips for SME">
+    <meta itemprop="description" content="Result Oriented Marketing for Google Ads set in 3 min. Auto Ads/Keywords suggestion and optimization by AI. Advertise now!">
+    <meta itemprop="image" content="http://goodad.co/images/goodad_logo_sq.png">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="GoodBlog - Result Oriented Marketing Tips for SME">
+    <meta name="og:description" content="Result Oriented Marketing for Google Ads set in 3 min. Auto Ads/Keywords suggestion and optimization by AI. Advertise now!">
+    <meta name="og:image" content="http://goodad.co/images/goodad_cover.png">
+    <meta name="og:url" content="http://goodad.co">
+    <meta name="og:site_name" content="GoodBlog">
+    <meta name="og:locale" content="en_HK">
+    <meta name="og:video" content="https://youtu.be/rkEOOKN1tUQ">
+    <meta name="fb:admins" content="267282930737726">
+    <meta name="og:type" content="website">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) End-->
+    <meta content="summary" name="twitter:card">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Webflow" name="generator">
+      <Helmet/>
       <Header />
       <BlogHeader />
       <div id="Features" className="sec-b-blog">

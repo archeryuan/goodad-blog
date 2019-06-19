@@ -1,0 +1,138 @@
+
+  .demo-card-square.mdl-card {
+    width: 320px;
+    height: 320px;
+  }
+
+  .mdl-textfield__label:after {
+      background-color: rgb(63,81,181);
+      bottom: 30px;
+      content: '';
+      height: 2px;
+      left: 45%;
+      position: absolute;
+      transition-duration: .2s;
+      transition-timing-function: cubic-bezier(.4,0,.2,1);
+      visibility: hidden;
+      width: 10px;
+  }
+
+  .mdl-textfield__input {
+      border-bottom: 1px solid  #676e83;
+      font-family: Montserrat, sans-serif;
+      color: #101a46;
+      padding: 8px 0;
+  }
+
+  .estimationInput .mdl-textfield__input {
+    border-bottom: 1px solid  #fff;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    padding: 8px 0px 0px 20px;
+    font-size: 30px;
+  }
+
+  .estimationInput .mdl-textfield__label:after {
+      background-color: #fff;
+      bottom: 30px;
+      content: '';
+      height: 2px;
+      left: 45%;
+      position: absolute;
+      transition-duration: .2s;
+      transition-timing-function: cubic-bezier(.4,0,.2,1);
+      visibility: hidden;
+      width: 10px;
+  }
+
+  .estimationInput .mdl-textfield__label {
+      color: #fff
+  }
+
+  .exchange-sign {
+      margin-bottom: 20px;
+  }
+
+  .disabledbutton {
+      pointer-events: none;
+      opacity: 0.7;
+  }
+
+  .mat-form-field-prefix {
+      white-space: nowrap;
+      flex: none;
+      position: relative;
+  }
+
+  .mdl-button--icon {
+      border-radius: 50%;
+      font-size: 24px;
+      height: 32px;
+      margin-left: 0;
+      margin-right: 0;
+      min-width: 1px;
+      width: 14px;
+      padding: 0;
+      overflow: hidden;
+      color: #fff;
+      line-height: normal;
+  }
+
+  .mdl-textfield .mdl-button {
+      position: absolute;
+      bottom: 35px;
+  }
+
+  .mdl-spinner {
+      position: absolute;
+  }
+
+  .mdl-textfield {
+      padding: 20px 0 35px 0;
+  }
+
+  svg{width:30%;}
+
+  .iframeJs {
+    display:none;
+    visibility:hidden;
+  }
+
+  .mdl-textfield__label.email {
+    color: #8A90A0;
+  }
+
+  .calDiv {
+    position:  absolute;
+    top: 30%;
+    left: 38%;
+  }
+
+  .mdl-textfield__label.cal {
+    top:4px;
+    color:#fff;
+    font-size:12px;
+    visibility:visible;
+  }
+
+
+  .mdl-textfield__label.ec {
+    color:#fff;
+  }
+
+  .lang {
+    display: inline-block;
+    height: 40px;
+    margin-top: 14px;
+    margin-left: 15px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    float: right;
+    font-family: Montserrat,sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .lang {
+      margin-top: 10px;
+    }
+  }

@@ -11,7 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://storage.googleapis.com/img.goodpage.app/goodad_blog.css" />
         <link rel="stylesheet" href="https://storage.googleapis.com/img.goodpage.app/temp3/lib/font-awesome/css/font-awesome.min.css" />
         {props.headComponents}
       </head>

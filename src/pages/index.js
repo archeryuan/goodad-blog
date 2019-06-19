@@ -1,4 +1,9 @@
 import React from 'react'
+import { graphql } from 'gatsby'
+import get from 'lodash/get'
+import Helmet from 'react-helmet'
+import Hero from '../components/hero'
+import Layout from '../components/layout'
 import Link from 'gatsby-link'
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -41,8 +46,6 @@ const styles = {
   },
 };
 
-
-
 const BlogPost = ({node}) => {
   return (
     <div>
@@ -52,13 +55,8 @@ const BlogPost = ({node}) => {
     </div>
   )
 }
-// const IndexPage = ({data}) => (
-//   <ul className='blog-post'>
-//     {data.allContentfulBlogPost.edges.map((edge) => <BlogPost node={edge.node} />)}
-//   </ul>
-// )
 
-function IndexPage(props) {
+function RootIndex(props) {
   const { classes } = props;
   const { data } = props;
   let wWidth = 960;
@@ -67,6 +65,7 @@ function IndexPage(props) {
     wWidth = window.innerWidth;
   }
   return (
+    <Layout>
     <div className={classes.root}>
       <GridList cellHeight={160} className={classes.gridList} cols={wWidth < 900 ? 1 : 2}>
         {data.allContentfulBlogPost.edges.map((edge) => {if(edge.node.heroImage){return (
@@ -78,7 +77,7 @@ function IndexPage(props) {
               <Link to={edge.node.slug}>
                 <CardMedia
                   className={classes.media}
-                  image={edge.node.heroImage.responsiveResolution ? edge.node.heroImage.responsiveResolution.src : noImage}
+                  image={edge.node.heroImage.fluid ? edge.node.heroImage.fluid.src : noImage}
                   title={edge.node.title}
                 />
               </Link>
@@ -107,16 +106,86 @@ function IndexPage(props) {
           </GridListTile>)}} )}
       </GridList>
     </div>
+    </Layout>
   );
 }
 
-IndexPage.propTypes = {
+RootIndex.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(IndexPage);
+export default withStyles(styles)(RootIndex);
 
-// export default IndexPage
+
+// class RootIndex extends React.Component {
+//   render() {
+//
+//     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
+//     const classes = get(this, 'props.classes')
+//
+//     // const { classes } = props;
+//     // const { data } = props;
+//     let wWidth = 960;
+//
+//     if(typeof window !== 'undefined' && window.innerWidth){
+//       wWidth = window.innerWidth;
+//     }
+//
+//     return (
+//       <Layout location={this.props.location} >
+//       <div className={classes.root}>
+//         <GridList cellHeight={160} className={classes.gridList} cols={wWidth < 900 ? 1 : 2}>
+//           {posts.map((edge) => {if(edge.node.heroImage){return (
+//             <GridListTile key={edge.node.id} cols={edge.node.cols || 1} rows={3} style={{
+//               paddingLeft: 20,
+//               paddingRight: 20
+//             }}>
+//               <Card className={classes.card}>
+//                 <Link to={edge.node.slug}>
+//                   <CardMedia
+//                     className={classes.media}
+//                     image={edge.node.heroImage.responsiveResolution ? edge.node.heroImage.responsiveResolution.src : noImage}
+//                     title={edge.node.title}
+//                   />
+//                 </Link>
+//                 <CardContent>
+//                   <Typography gutterBottom variant="headline" component="h2" style={{
+//                     fontFamily: 'Montserrat, sans-serif',
+//                     color: '#f44e7a',
+//                     textAlign: 'center',
+//                   }}>
+//                     <Link to={edge.node.slug} style={{
+//                       fontFamily: 'Montserrat, sans-serif',
+//                       color: '#f44e7a',
+//                       textAlign: 'center',
+//                       textDecoration: 'none'
+//                     }}>
+//                       {edge.node.title}
+//                     </Link>
+//                   </Typography>
+//                   <Typography component="p">
+//                     {edge.node.body.childMarkdownRemark.excerpt}
+//                   </Typography>
+//                 </CardContent>
+//                 <CardActions>
+//                 </CardActions>
+//               </Card>
+//             </GridListTile>)}} )}
+//         </GridList>
+//       </div>
+//       </Layout>
+//     )
+//   }
+// }
+//
+// RootIndex.propTypes = {
+//   classes: PropTypes.object.isRequired,
+// };
+//
+//
+//
+//
+// export default RootIndex
 
 export const pageQuery = graphql`
    query pageQuery {
@@ -139,7 +208,7 @@ export const pageQuery = graphql`
               }
             }
             heroImage {
-              responsiveResolution(width: 300, height: 300) {
+              fluid(maxWidth: 300, maxHeight: 300, resizingBehavior: SCALE) {
                 src
               }
             }

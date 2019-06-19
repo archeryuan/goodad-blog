@@ -82,7 +82,7 @@ function RootIndex(props) {
                 />
               </Link>
               <CardContent>
-                <Typography gutterBottom variant="headline" component="h2" style={{
+                <Typography gutterBottom variant="h5" component="h2" style={{
                   fontFamily: 'Montserrat, sans-serif',
                   color: '#f44e7a',
                   textAlign: 'center',

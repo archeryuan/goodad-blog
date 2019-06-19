@@ -7,6 +7,8 @@ import { Helmet } from "react-helmet"
 import logo from "../assets/images/goodblog_logo_light.png";
 import lightLogo from "../assets/images/Logo-Light.png"
 import previewLogo from "../assets/images/preview.png"
+import fav1 from "../assets/images/32x32.png"
+import fav2 from "../assets/images/256x256.png"
 
 import '../assets/css/normalize.min.css'
 import '../assets/css/webflow.min.css'
@@ -18,23 +20,23 @@ import '../assets/css/main.css'
 const Header = (props) => {
   let showLogo = logo
   return (
-        <div id="header-goodad" class="fixed-top">
-          <div class="container">
-            <div class="logo float-left">
-              <a href="./index.html" class="scrollto">
-                <img class="logo-padding" src={showLogo} height="35" alt="GoodBlog - Result Oriented Marketing Tips for SME" class="img-fluid" />
+        <div id="header-goodad" className="fixed-top">
+          <div className="container">
+            <div className="logo float-left">
+              <a href="./index.html" className="scrollto">
+                <img className="img-fluid" src={showLogo} alt="GoodBlog - Result Oriented Marketing Tips for SME"  />
               </a>
             </div>
-            <nav class="main-nav float-right d-none d-lg-block">
+            <nav className="main-nav float-right d-none d-lg-block">
               <ul>
-                  <li class="active"><a href="#Home" id="Nav-Home" alt="Home" title="Home">Home</a></li>
+                  <li className="active"><a href="#Home" id="Nav-Home" alt="Home" title="Home">Home</a></li>
                   <li><a href="https://goodad.co/index.html#Features" id="Nav-Features" alt="Features" title="Features">Features</a></li>
                   <li><a href="https://goodad.co/index.html#Procedures" id="Nav-Procedures" alt="Procedures" title="Procedures">Procedures</a></li>
                   <li><a href="https://goodad.co/index.html#Pricing" id="Nav-Pricing" alt="Pricing" title="Pricing">Pricing</a></li>
                   <li><a href="https://goodad.co" id="Nav-GoodAd" alt="GoodAd" title="GoodAd">GoodAd</a></li>
                   <li><a href="https://goodpage.app" id="Nav-GoodPage" alt="GoodPage" title="GoodPage">GoodPage</a></li>
-                <li><a href="https://app.goodad.co/" class="nav-tab-login">Login</a></li>
-                <li><a href="https://app.goodad.co/auth/signUp" class="nav-tab-signup" target="_blank">SignUp</a></li>
+                <li><a href="https://app.goodad.co/" className="nav-tab-login">Login</a></li>
+                <li><a href="https://app.goodad.co/auth/signUp" className="nav-tab-signup" target="_blank">SignUp</a></li>
               </ul>
             </nav>
           </div>
@@ -79,48 +81,48 @@ const BlogHeader = () => (
 
 
 const Footer = () => (
-  <div class="sec-e-footer">
-    <div class="con-footer w-container">
-      <div class="div-footer-box">
-        <div class="w-row">
-          <div class="col-footer-box w-clearfix w-col w-col-7 w-col-medium-6">
-            <div class="footer-box-title"><strong> Need a Good Web Page for Ads?</strong></div>
-            <div class="footer-box-text">Build result oriented marketing page now!</div>
+  <div className="sec-e-footer">
+    <div className="con-footer w-container">
+      <div className="div-footer-box">
+        <div className="w-row">
+          <div className="col-footer-box w-clearfix w-col w-col-7 w-col-medium-6">
+            <div className="footer-box-title"><strong> Need a Good Web Page for Ads?</strong></div>
+            <div className="footer-box-text">Build result oriented marketing page now!</div>
           </div>
-          <div class="w-clearfix w-col w-col-5 w-col-medium-6"><a href="https://goodpage.app" target="_blank" id="btn_goodpage" class="footer-box-create-button w-button" target="_blank">Try GoodPage</a></div>
+          <div className="w-clearfix w-col w-col-5 w-col-medium-6"><a href="https://goodpage.app" target="_blank" id="btn_goodpage" className="footer-box-create-button w-button" target="_blank">Try GoodPage</a></div>
         </div>
       </div>
-      <div class="grid-footer w-row">
-        <div class="w-col w-col-7">
-          <div class="w-row">
-            <div class="col-footer-lines w-clearfix w-col w-col-4">
-              <div class="footer-title">Site Map</div>
-              <a href="./index.html#Home" id="Footer-Home-link" class="footer-links">Home</a>
-              <a href="./index.html#Features" id="Footer-Features-link" class="footer-links">Features</a>
-              <a href="./index.html#Procedures" id="Footer-Procedures-link" class="footer-links">Procedures</a>
-              <a href="./index.html#Pricing" id="Footer-Pricing-link" class="footer-links">Pricing</a>
+      <div className="grid-footer w-row">
+        <div className="w-col w-col-7">
+          <div className="w-row">
+            <div className="col-footer-lines w-clearfix w-col w-col-4">
+              <div className="footer-title">Site Map</div>
+              <a href="./index.html#Home" id="Footer-Home-link" className="footer-links">Home</a>
+              <a href="./index.html#Features" id="Footer-Features-link" className="footer-links">Features</a>
+              <a href="./index.html#Procedures" id="Footer-Procedures-link" className="footer-links">Procedures</a>
+              <a href="./index.html#Pricing" id="Footer-Pricing-link" className="footer-links">Pricing</a>
             </div>
-            <div class="col-footer-lines w-clearfix w-col w-col-4">
-              <div class="footer-title">Legal</div>
-              <a href="./privacy-policy.html" id="Footer-Policy-link" class="footer-links">Privacy Policy</a>
-              <a href="./disclaimer.html" id="Footer-Disclaimer-link" class="footer-links">Disclaimer</a>
-              <a href="./terms.html" class="footer-links">Terms &amp; conditions</a>
-              <a href="mailto:info@goodad.co" id="Footer-Email-link" class="footer-links">info@goodad.co</a>
+            <div className="col-footer-lines w-clearfix w-col w-col-4">
+              <div className="footer-title">Legal</div>
+              <a href="./privacy-policy.html" id="Footer-Policy-link" className="footer-links">Privacy Policy</a>
+              <a href="./disclaimer.html" id="Footer-Disclaimer-link" className="footer-links">Disclaimer</a>
+              <a href="./terms.html" className="footer-links">Terms &amp; conditions</a>
+              <a href="mailto:info@goodad.co" id="Footer-Email-link" className="footer-links">info@goodad.co</a>
             </div>
-            <div class="col-footer-lines w-clearfix w-col w-col-4">
-                <div class="footer-title">Link</div>
-                <a href="https://goodad.co" id="Footer-GoodAd-link" class="footer-links">GoodAd</a>
-                <a href="https://goodpage.app" id="Footer-GoodPage-link" class="footer-links">GoodPage</a>
-                <a href="https://blog.goodad.co" id="Footer-GoodBlog-link" class="footer-links">GoodBlog</a>
-                <a href="https://icp.goodpage.app" id="Footer-GoodPage-link" class="footer-links">ICP Filing Expert</a>
+            <div className="col-footer-lines w-clearfix w-col w-col-4">
+                <div className="footer-title">Link</div>
+                <a href="https://goodad.co" id="Footer-GoodAd-link" className="footer-links">GoodAd</a>
+                <a href="https://goodpage.app" id="Footer-GoodPage-link" className="footer-links">GoodPage</a>
+                <a href="https://blog.goodad.co" id="Footer-GoodBlog-link" className="footer-links">GoodBlog</a>
+                <a href="https://icp.goodpage.app" id="Footer-GoodPage-link" className="footer-links">ICP Filing Expert</a>
               </div>
           </div>
         </div>
-        <div class="w-clearfix w-col w-col-5">
-        <a href="index.html" class="link-footer-logo w-inline-block w--current">
-        <img class="img-fluid" src={logo} height="35" alt="GoodBlog - Result Oriented Marketing Tips for SME" title="GoodBlog - Result Oriented Marketing Tips for SME" />
+        <div className="w-clearfix w-col w-col-5">
+        <a href="index.html" className="link-footer-logo w-inline-block w--current">
+        <img className="img-fluid" src={logo} height="35" alt="GoodBlog - Result Oriented Marketing Tips for SME" title="GoodBlog - Result Oriented Marketing Tips for SME" />
         </a>
-          <div class="footer-copyright-text">GoodAd © 2019. All rights reserved</div>
+          <div className="footer-copyright-text">GoodAd © 2019. All rights reserved</div>
         </div>
       </div>
     </div>
@@ -172,6 +174,8 @@ class Template extends React.Component {
           <meta name="og:video" content="https://youtu.be/rkEOOKN1tUQ" />
           <meta name="fb:admins" content="267282930737726" />
           <meta name="og:type" content="website" />
+          <link href={fav1} rel="shortcut icon" type="image/x-icon" />
+          <link href={fav2} rel="apple-touch-icon" />
         </Helmet>
         <Header />
         <BlogHeader />

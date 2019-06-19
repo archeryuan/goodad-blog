@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import base from './base.css'
 import Container from './container'
 import Navigation from './navigation'
+import { Helmet } from "react-helmet"
 
 import logo from "../assets/images/GoodAd-Blog-Logo.png";
 import lightLogo from "../assets/images/Logo-Light.png"
@@ -110,6 +111,7 @@ class Template extends React.Component {
   render() {
     const { location, children } = this.props
     let header
+    let title = "GoodBlog - Result Oriented Marketing Tips for SME"
 
     let rootPath = `/`
     // if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
@@ -123,14 +125,42 @@ class Template extends React.Component {
       //   {children}
       // </Container>
       <div>
-      <Header />
-      <BlogHeader />
-      <div id="Features" className="sec-b-blog">
-        <div className="con-blog-list w-container">
-          {children}
+        <Helmet defer={false} defaultTitle={title} titleTemplate={`%s | ${title}`}>
+          <html lang="en" />
+          <meta charset="utf-8" />
+          <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+          <meta name="title" content="GoodBlog - Result Oriented Marketing Tips for SME" />
+          <meta name="description" content="Result Oriented Marketing for Google Ads set in 3 min. Auto Ads/Keywords suggestion and optimization by AI. Advertise now!" />
+          <meta name="keywords" content="Result Oriented Marketing, Google Ads,Get the Real ROI From Your Ads Money, Remarketing, SME,Startup,SEO,,Facebook Ads,Search Engine Marketing,GoodPage,GoodAd" />
+          <meta name="robots" content="index, follow" />
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta name="language" content="English" />
+          <meta name="revisit-after" content="3 days" />
+          <meta name="author" content="Social Analytics (HK) Limited, Master Concept Group" />
+          <link rel="canonical" href="https://www.goodad.co" rel="nofollow"/>
+          <meta name="description" content="Result Oriented Marketing for Google Ads set in 3 min. Auto Ads/Keywords suggestion and optimization by AI. Advertise now!" />
+          <meta name="image" content="http://goodad.co/images/goodad_logo_sq.png" />
+          <meta itemprop="name" content="GoodBlog - Result Oriented Marketing Tips for SME" />
+          <meta itemprop="description" content="Result Oriented Marketing for Google Ads set in 3 min. Auto Ads/Keywords suggestion and optimization by AI. Advertise now!" />
+          <meta itemprop="image" content="http://goodad.co/images/goodad_logo_sq.png" />
+          <meta name="og:title" content="GoodBlog - Result Oriented Marketing Tips for SME" />
+          <meta name="og:description" content="Result Oriented Marketing for Google Ads set in 3 min. Auto Ads/Keywords suggestion and optimization by AI. Advertise now!" />
+          <meta name="og:image" content="http://goodad.co/images/goodad_cover.png" />
+          <meta name="og:url" content="http://goodad.co" />
+          <meta name="og:site_name" content="GoodBlog" />
+          <meta name="og:locale" content="en_HK" />
+          <meta name="og:video" content="https://youtu.be/rkEOOKN1tUQ" />
+          <meta name="fb:admins" content="267282930737726" />
+          <meta name="og:type" content="website" />
+        </Helmet>
+        <Header />
+        <BlogHeader />
+        <div id="Features" className="sec-b-blog">
+          <div className="con-blog-list w-container">
+            {children}
+          </div>
         </div>
-      </div>
-      <Footer />
+        <Footer />
       </div>
     )
   }

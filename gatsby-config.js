@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `GoodAd blog`,
+    title: `GoodBlog - Result Oriented Marketing Tips for SME`,
+    description: `Result Oriented Marketing for Google Ads set in 3 min. Auto Ads/Keywords suggestion and optimization by AI. Advertise now!`,
+    author: `@GoodProd`,
+    siteUrl: `https://blog.goodad.co`,
   },
-  plugins: [
-    {
+  plugins: [{
       resolve: 'gatsby-source-contentful',
       options: {
         spaceId: `ldcsjhfffdjn`,
@@ -11,12 +13,13 @@ module.exports = {
       }
     },
     {
-    resolve: `gatsby-plugin-google-tagmanager`,
-    options: {
-      id: "GTM-NGCXZCV",
-      includeInDevelopment: false,
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: "GTM-NGCXZCV",
+        includeInDevelopment: false,
+      },
     },
-  },
+    `gatsby-plugin-sitemap`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`
   ],

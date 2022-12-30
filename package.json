@@ -5,7 +5,7 @@
   "author": "Archer Yuan <archer.yuan@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^4.1.1",
-    "gatsby": "^2.9.7",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.0.38",
     "gatsby-plugin-google-tagmanager": "^2.0.15",
     "gatsby-plugin-react-helmet": "^3.0.12",
